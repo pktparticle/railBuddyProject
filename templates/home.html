@@ -1,0 +1,421 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Photo Ninja</title>
+    <style>
+        header {
+            background-size: cover;
+            background-color: indigo;
+
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:focus, .tabs .tab a:focus.active {
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+
+<!-- navbar -->
+<header>
+    <nav class="nav-wrapper transparent">
+        <div class="container">
+            <a href="#" class="brand-logo">RailBuddy</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">PNR Status</a></li>
+                <li><a href="#services">Trains Between Stations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+                       data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+                       data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+                       data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#">PNR Status</a></li>
+                <li><a href="#">Trains Between Stations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- photo / grid
+<section class="container section scrollspy" id="photos">
+  <div class="row">
+    <div class="col s12 l4">
+        <img src="images/rail_background.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text text-darken-4">Portraits</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4 offset-l1 push-l7">
+        <img src="images/rail_background.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1 pull-l5 right-align">
+      <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4">
+        <img src="images/rail_background.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text text-darken-4">Nature</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+</section>
+-->
+<!-- parallax
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="images/rail_background.jpg" alt="" class="responsive-img">
+  </div>
+</div>
+-->
+<!-- services / tabs -->
+<section class="section container scrollspy" id="services">
+    <div class="row">
+        <div class="col s12 center">
+            <i class="material-icons large indigo-text text-darken-4">train</i>
+            <h3 class="indigo-text text-darken-4">Indian Railways</h3>
+            <p class="indigo-text text-darken-4 flow-text">Safety | Security | Punctuality</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <!-- tabs -->
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#pnrStatus" class="active indigo-text text-darken-4">PNR Status</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#trainsBetweenStations" class="indigo-text text-darken-4">Train Between Stations</a>
+                </li>
+            </ul>
+            <div id="pnrStatus" class="col s12">
+                <p class="flow-text indigo-text text-darken-4">PNR Status</p>
+                <div class="col s12 l6">
+                    <form action="">
+                        <div class="input-field left-align">
+                            <i class="material-icons indigo-text prefix text-darken-4">train</i>
+                            <input type="text" id="pnr">
+                            <label for="pnr" class="indigo-text">Input your PNR Number</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="trainsBetweenStations" class="col s12">
+                <p class="flow-text indigo-text text-darken-4">Trains Between Stations</p>
+                <div class="row">
+                    <form class="col s12" action="{% url 'trainBetweenStation' %}" method="post">
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix indigo-text text-darken-4">arrow_upward</i>
+                                <input id="from_stn" name="from_station" type="text" class="validate">
+                                <label for="from_stn">Source Station Code</label>
+
+                            </div>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix indigo-text text-darken-4">arrow_downward</i>
+                                <input id="to_stn" name="to_station" type="text" class="validate">
+                                <label for="to_stn">Destination Station Code</label>
+
+                            </div>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix indigo-text text-darken-4">date_range</i>
+                                <input type="text" id="date" class="datepicker">
+                                <label for="date">Date of Journey</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 right-align">
+                                <button class="btn waves-effect waves-light indigo text-darken-4" type="submit"
+                                        name="action">Submit
+                                    <i class="material-icons indigo right text-darken-4">send</i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="section container scrollspy" id="services2">
+    <ul class="collection with-header">
+        <li class="collection-header">
+            <h4>IP and NLP Team</h4>
+        </li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle indigo">person</i>
+            <span class="title">Abhishek</span>
+            <p class="grey-text">Description of Abhishek</p>
+            <a href="#" class="secondary-content">
+                <i class="material-icons indigo-text right">email</i>
+            </a>
+        </li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle indigo">person</i>
+            <span class="title">Abhishek</span>
+            <p class="grey-text">Description of Abhishek</p>
+            <a href="#" class="secondary-content">
+                <i class="material-icons indigo-text right">email</i>
+            </a>
+        </li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle indigo">person</i>
+            <span class="title">Abhishek</span>
+            <p class="grey-text">Description of Abhishek</p>
+            <a href="#" class="secondary-content">
+                <i class="material-icons indigo-text right">email</i>
+            </a>
+        </li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle indigo">person</i>
+            <span class="title">Abhishek</span>
+            <p class="grey-text">Description of Abhishek</p>
+            <a href="#" class="secondary-content">
+                <i class="material-icons indigo-text right">email</i>
+            </a>
+        </li>
+        <li class="collection-item">Aviharsh</li>
+        <li class="collection-item">Mithilesh</li>
+        <li class="collection-item">Prashant</li>
+        <li class="collection-item">Saurabh</li>
+    </ul>
+</section>
+
+
+<!-- parallax
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="images/rail_background.jpg" alt="" class="responsive-img">
+  </div>
+</div>
+-->
+
+
+
+<section class="section container scrollspy" id="contact2">
+
+    <div class="row">
+        <div class="col s12 l4">
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="images/pasta.webp" alt="Pasta" height="200px">
+                    <a href="#" class="halfway-fab btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-title">Pasta type-A</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta eveniet quam optio
+                        magni dicta animi architecto, voluptates aut amet laudantium illo odio iste numquam unde
+                        quasi alias! Suscipit, debitis!</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">More Details</a>
+                    <a href="#">View Ingredients</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col s12 l4">
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="images/pasta.webp" alt="Pasta" height="200px">
+                    <a href="#" class="halfway-fab btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-title">Pasta type-A</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta eveniet quam optio
+                        magni dicta animi architecto, voluptates aut amet laudantium illo odio iste numquam unde
+                        quasi alias! Suscipit, debitis!</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">More Details</a>
+                    <a href="#">View Ingredients</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l4">
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="images/pasta2.jpg" alt="Pasta" height="200px">
+                    <a href="#" class="halfway-fab btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-title">Pasta type-B</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta eveniet quam optio
+                        magni dicta animi architecto, voluptates aut amet laudantium illo odio iste numquam unde
+                        quasi alias! Suscipit, debitis!</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">More Details</a>
+                    <a href="#">View Ingredients</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<!-- contact form -->
+<section class="section container scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+                tincidunt orci.</p>
+            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
+                scelerisque erat ornare nec.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+                tincidunt orci.</p>
+            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
+                scelerisque erat ornare nec.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <form>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date you need me for...</label>
+                </div>
+                <div class="input-field">
+                    <p>Services required:</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Photography</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Photo Editing</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5>About Me</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
+                    nec, tincidunt orci.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2020 RailBuddy</div>
+    </div>
+</footer>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true,
+            yearRange: 1
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+
+    });
+</script>
+</body>
+</html>
