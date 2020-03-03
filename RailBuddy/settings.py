@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'pnr',
-    'trainBetweenStations',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
