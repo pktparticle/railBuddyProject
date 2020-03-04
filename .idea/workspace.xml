@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="377650de-d34f-47e9-8d00-c12283ccbb79" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/pnr/scrapping3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pnr/scrapping4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pnr/stations.json" afterDir="false" />
+>>>>>>> badaf3b0fb129eb19247b0e3f68914d08531774b
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RailBuddy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RailBuddy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pnr/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnr/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pnr/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainBetweenStations/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/pasta.webp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +31,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Ycarzs6cJ1DgkwEblCrHuJChVS" />
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+>>>>>>> badaf3b0fb129eb19247b0e3f68914d08531774b
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -56,7 +60,29 @@
       <recent name="C:\Users\pkt\PycharmProjects\RailBuddy\images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.RailBuddy">
+    <configuration name="scrapping4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RailBuddy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pnr" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pnr/scrapping4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="RailBuddy" type="Python.DjangoServer" factoryName="Django server">
       <module name="RailBuddy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +107,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scrapping4" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -92,15 +123,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583244538618</updated>
+<<<<<<< HEAD
       <workItem from="1583244555950" duration="15297000" />
       <workItem from="1583297815312" duration="29000" />
+=======
+      <workItem from="1583244555950" duration="13471000" />
+      <workItem from="1583264060061" duration="11467000" />
     </task>
+    <task id="LOCAL-00001" summary="new project">
+      <created>1583269779110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583269779110</updated>
+>>>>>>> badaf3b0fb129eb19247b0e3f68914d08531774b
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="new project" />
+    <option name="LAST_COMMIT_MESSAGE" value="new project" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583297847267">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -121,5 +172,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583263468720" />
+=======
+    <state x="402" y="0" key="#RailBuddy" timestamp="1583264145411">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="402" y="0" key="#RailBuddy/0.0.1366.728@0.0.1366.728" timestamp="1583264145411" />
+    <state x="438" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583299253131">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="438" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1583299253131" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1583269775600">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583269775600" />
+    <state width="1323" height="67" key="GridCell.Tab.0.bottom" timestamp="1583300900061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="67" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583300900061" />
+    <state width="1323" height="67" key="GridCell.Tab.0.center" timestamp="1583300900061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="67" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583300900061" />
+    <state width="1323" height="67" key="GridCell.Tab.0.left" timestamp="1583300900061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="67" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583300900061" />
+    <state width="1323" height="67" key="GridCell.Tab.0.right" timestamp="1583300900061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="67" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583300900061" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1583264444577">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583264444577" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1583301447888">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583301447888" />
+    <state x="379" y="96" width="607" height="536" key="find.popup" timestamp="1583264227309">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="96" width="607" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1583264227309" />
+    <state x="324" y="90" width="700" height="530" key="recent.locations.popup" timestamp="1583298641697">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="324" y="90" width="700" height="530" key="recent.locations.popup/0.0.1366.728@0.0.1366.728" timestamp="1583298641697" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583299264250">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583299264250" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/railBuddyProject$scrapping4.coverage" NAME="scrapping4 Coverage Results" MODIFIED="1583300268326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pnr" />
+>>>>>>> badaf3b0fb129eb19247b0e3f68914d08531774b
   </component>
 </project>
