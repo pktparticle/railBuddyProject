@@ -138,6 +138,7 @@
                 <div class="col s12 l6">
                     <form action="{% url 'pnr_status' %}" method="post">
                         {% csrf_token %}
+                    <form action="{% url 'pnr_status' %}">
                         <div class="input-field left-align">
                             <i class="material-icons indigo-text prefix text-darken-4">train</i>
                             <input type="text" name="pnr" id="pnr">
@@ -149,6 +150,11 @@
                                     <i class="material-icons indigo right text-darken-4">send</i>
                                 </button>
                             </div>
+                        </div>
+                        <div class="col s12 right-align">
+                                <button class="btn waves-effect waves-light indigo text-darken-4" type="submit" name="action">Get status
+                                    <i class="material-icons indigo right text-darken-4">send</i>
+                                </button>
                         </div>
                     </form>
                 </div>

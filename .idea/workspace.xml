@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="377650de-d34f-47e9-8d00-c12283ccbb79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailBuddy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RailBuddy/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pnr/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnr/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pnr/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainBetweenStations/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +31,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Ycarzs6cJ1DgkwEblCrHuJChVS" />
@@ -114,13 +121,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583263468720" />
-    <state x="395" y="81" key="MultipleFileMergeDialog" timestamp="1583303126724">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="395" y="81" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1583303126724" />
-    <state x="464" y="80" key="git4idea.branch.GitSmartOperationDialog" timestamp="1583303102108">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="464" y="80" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1583303102108" />
   </component>
 </project>
