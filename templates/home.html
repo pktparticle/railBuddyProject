@@ -11,6 +11,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <title>Photo Ninja</title>
+
+
     <style>
         header {
             background-size: cover;
@@ -50,8 +52,11 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#pnrStatus">PNR Status</a></li>
-                <li><a href="#trainsBetweenStations">Trains Between Stations</a></li>
+                <li class="status " data-tab="pnrStatus"><a>PNR Status </a></li>
+                <li>
+                    <div class="status" data-tab="trainsBetweenStations"><a>Trains Between Stations</a></div>
+                </li>
+
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
                        data-tooltip="Instagram">
@@ -129,7 +134,9 @@
                 <li class="tab col s6">
                     <a href="#pnrStatus" class="active indigo-text text-darken-4">PNR Status</a>
                 </li>
+
                 <li class="tab col s6">
+                    {#                    <div id="trainbetween">#}
                     <a href="#trainsBetweenStations" class="indigo-text text-darken-4">Train Between Stations</a>
                 </li>
             </ul>
@@ -176,9 +183,6 @@
             <i class="material-icons circle indigo">person</i>
             <span class="title"><strong>Current</strong> &nbsp; {{ current.0 }}</span>
             <p class="title">Booked status &nbsp;&nbsp; {{ booked.0 }}</p>
-
-
-            </a>
         </li>
 
     </ul>
@@ -223,6 +227,22 @@
                     </form>
                 </div>
             </div>
+            {##}
+            {#        <ul class="collection with-header">#}
+            {#        <li class="collection-header">#}
+            {#            <h4>Train between stations</h4>#}
+            {#        </li>#}
+            {#        <li class="collection-item avatar">#}
+            {#            <i class="material-icons circle indigo">person</i>#}
+            {#            <span class="title"><strong>Current</strong> &nbsp; gwalior</span>#}
+            {#            <p class="title">Bhopal</p>#}
+            {##}
+            {##}
+            {#            </a>#}
+            {#        </li>#}
+            {##}
+            {#    </ul>#}
+
         </div>
     </div>
 
@@ -403,6 +423,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script>
+
     $(document).ready(function () {
 
         $('.sidenav').sidenav();
@@ -416,6 +437,11 @@
         $('.tooltipped').tooltip();
         $('.scrollspy').scrollSpy();
 
+    });
+
+    $(document).on('click', '.status', function () {
+        var tab = $(this).attr('data-tab');
+        $('.tabs').tabs('select', tab);
     });
 </script>
 </body>
