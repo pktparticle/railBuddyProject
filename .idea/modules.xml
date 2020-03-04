@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/RailBuddy.iml" filepath="$PROJECT_DIR$/.idea/RailBuddy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/railBuddyProject.iml" filepath="$PROJECT_DIR$/.idea/railBuddyProject.iml" />
     </modules>
   </component>
 </project>
