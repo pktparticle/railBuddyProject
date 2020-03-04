@@ -49,5 +49,4 @@ def train_between_station(request):
         trains = scrapping4.get_trains_between_stn(source,destination,[day,months[mon],yr])
         print(trains)
         return render(request, 'home.html')
-
     return render(request, 'home.html')
