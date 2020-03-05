@@ -11,6 +11,29 @@ def get_trains_between_stn(src,des,date):
 		# 	print('5 arguments needed => source_stn_code dest_stn_code travel_date travel_month travel_year')
 		# 	sys.exit()
 
+		with open("pnr/reverseStation.json")as f:
+			temp = json.load(f)
+		src=str(temp[src])
+		des=str(temp[des])
+		print()
+		print()
+		print()
+		print()
+		print()
+		print()
+		print()
+
+		print(src) 
+		print(des)
+
+		print()
+		print()
+		print()
+		print()
+		print()
+		print()
+		print()
+
 
 		with open("pnr/stations.json") as stations:
 			stns = json.load(stations)
@@ -36,7 +59,7 @@ def get_trains_between_stn(src,des,date):
 			print('The date you entered is not valid')
 			sys.exit()
 
-		url = 'https://www.railyatri.in/booking/trains-between-stations?from_code='+source_stn+'&from_name='+ stns[source_stn] +'+&journey_date='+day+'%2F'+month+'%2F'+year+'%2F'+'&to_code='+dest_stn+'&to_name='+stns[dest_stn]+'+&user_id=1&user_token=6'
+		url = 'https://www.railyatri.in/booking/trains-between-stations?from_code='+source_stn+'&from_name='+ stns[src] +'+&journey_date='+day+'%2F'+month+'%2F'+year+'%2F'+'&to_code='+dest_stn+'&to_name='+stns[des]+'+&user_id=1&user_token=6'
 		print(url)
 		r = requests.get(url)
 		soup = BeautifulSoup(r.text, 'html.parser')
