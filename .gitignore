@@ -6,5 +6,6 @@ settings.py
 *.pot
 *.pyc
 *.iml
+**/*.iml
 ;;directories to ignore
 .idea/
