@@ -2,7 +2,7 @@ from django.shortcuts import render
 import requests
 from . import scrapping3, scrapping4
 
-#test
+
 def home(request):
 	return render(request, 'home.html')
 
