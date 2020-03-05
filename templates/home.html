@@ -11,6 +11,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <title>Photo Ninja</title>
+
+
     <style>
         header {
             background-size: cover;
@@ -50,8 +52,11 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#pnrStatus">PNR Status</a></li>
-                <li><a href="#trainsBetweenStations">Trains Between Stations</a></li>
+                <li class="status " data-tab="pnrStatus"><a>PNR Status </a></li>
+                <li>
+                    <div class="status" data-tab="trainsBetweenStations"><a>Trains Between Stations</a></div>
+                </li>
+
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
                        data-tooltip="Instagram">
@@ -126,11 +131,14 @@
         <div class="col s12">
             <!-- tabs -->
             <ul class="tabs">
+
                 <li class="tab col s6">
-                    <a href="#pnrStatus" class="active indigo-text text-darken-4">PNR Status</a>
+                    <a href="#pnrStatus"  class="indigo-text text-darken-4">PNR Status</a>
                 </li>
+
                 <li class="tab col s6">
-                    <a href="#trainsBetweenStations" class="indigo-text text-darken-4">Train Between Stations</a>
+                    {#                    <div id="trainbetween">#}
+                    <a href="#trainsBetweenStations"  class="indigo-text text-darken-4">Train Between Stations</a>
                 </li>
             </ul>
             <div id="pnrStatus" class="col s12">
@@ -138,7 +146,6 @@
                 <div class="col s12 l6">
                     <form action="{% url 'pnr_status' %}" method="post">
                         {% csrf_token %}
-                    <form action="{% url 'pnr_status' %}">
                         <div class="input-field left-align">
                             <i class="material-icons indigo-text prefix text-darken-4">train</i>
                             <input type="text" name="pnr" id="pnr">
@@ -151,15 +158,10 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col s12 right-align">
-                                <button class="btn waves-effect waves-light indigo text-darken-4" type="submit" name="action">Get status
-                                    <i class="material-icons indigo right text-darken-4">send</i>
-                                </button>
-                        </div>
                     </form>
                 </div>
-                {% if pnr|length > 0 %}
 
+{% if pnr|length > 0 %}
 <section class="section container scrollspy" id="services2">
 {% if current == -1 %}
 
@@ -182,9 +184,6 @@
             <i class="material-icons circle indigo">person</i>
             <span class="title"><strong>Current</strong> &nbsp; {{ current.0 }}</span>
             <p class="title">Booked status &nbsp;&nbsp; {{ booked.0 }}</p>
-
-
-            </a>
         </li>
 
     </ul>
@@ -192,8 +191,7 @@
 </section>
 
 {% endif %}
-
-            </div>
+</div>
             <div id="trainsBetweenStations" class="col s12">
                 <p class="flow-text indigo-text text-darken-4">Trains Between Stations</p>
                 <div class="row">
@@ -228,7 +226,50 @@
                         </div>
                     </form>
                 </div>
+
+            {% if trains|length > 0  %}
+                <section class="section  scrollspy" id="services2">
+                <ul class="collection with-header">
+        <li class="collection-header">
+            <h4>Trains between {{ source }} and {{ destination }}</h4>
+        </li>
+                    {% for train in trains %}
+        <li class="collection-item avatar">
+            <i class="material-icons circle indigo">train</i>
+            <span class="title" style="color:blue"> {{ train.0 }} - &nbsp; {{train.1}} </span>
+            <p>{{ train.2 }} &nbsp;{{ train.3 }} &nbsp; &nbsp; {{ train.4 }} &nbsp;{{ train.5 }}  &nbsp;&nbsp;&nbsp; {{ train.6 }}<br>
+            {{ train.7 }}<br>
+                {{ train.8 }}
+            </p>
+        </li>
+{% endfor %}
+    </ul>
+                </section>
+            {% endif %}
+
+
+
+
+
+
+
             </div>
+            {##}
+            {#        <ul class="collection with-header">#}
+            {#        <li class="collection-header">#}
+            {#            <h4>Train between stations</h4>#}
+            {#        </li>#}
+            {#        <li class="collection-item avatar">#}
+            {#            <i class="material-icons circle indigo">person</i>#}
+            {#            <span class="title"><strong>Current</strong> &nbsp; gwalior</span>#}
+            {#            <p class="title">Bhopal</p>#}
+            {##}
+            {##}
+            {#            </a>#}
+            {#        </li>#}
+            {##}
+            {#    </ul>#}
+
         </div>
     </div>
 
@@ -409,12 +450,16 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script>
+
     $(document).ready(function () {
 
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
+
+        $('.tabs').tabs('select','trainsBetweenStations');
+
         $('.datepicker').datepicker({
             disableWeekends: true,
             yearRange: 1
@@ -423,6 +468,11 @@
         $('.scrollspy').scrollSpy();
 
     });
+
+    $(document).on('click', '.status', function () {
+       var tab = $(this).attr('data-tab');
+       $('.tabs').tabs('select', tab);
+     });
 </script>
 </body>
 </html>

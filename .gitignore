@@ -9,3 +9,6 @@ settings.py
 **/*.iml
 ;;directories to ignore
 .idea/
+.vscode/
+**/*.pyc
+**/__pycache__/
