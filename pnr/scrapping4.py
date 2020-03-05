@@ -74,4 +74,4 @@ def get_trains_between_stn(src,des,date):
 		# else:
 		# 	print('Sorry! No trains match your search criteria, please choose different city')
 		# print(len(trains))
-		return stns[source_stn],stns[dest_stn],trains
+		return trains[0]

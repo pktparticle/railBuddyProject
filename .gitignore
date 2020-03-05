@@ -11,3 +11,4 @@ settings.py
 *.vscode
 ;;directories to ignore
 .idea/
+__pycache__
