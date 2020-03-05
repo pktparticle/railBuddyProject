@@ -6,9 +6,9 @@ settings.py
 *.pot
 *.pyc
 *.iml
-**/*.pyc
-
-*.vscode
+**/*.iml
 ;;directories to ignore
 .idea/
-__pycache__
+.vscode/
+**/*.pyc
+**/__pycache__/
