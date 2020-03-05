@@ -6,6 +6,8 @@ settings.py
 *.pot
 *.pyc
 *.iml
+**/*.pyc
+
 *.vscode
 ;;directories to ignore
 .idea/
