@@ -25,9 +25,9 @@ def get_trains_between_stn(src,des,date):
 			print('Destination station code is invalid')
 			sys.exit()
 
-		day = date[0]
-		month = date[1]
-		year = date[2]
+		day = str(date[0])
+		month = str(date[1])
+		year = str(date[2])
 
 		try:
 			print("inside scrapping ", int(year), int(month), int(day))

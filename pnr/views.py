@@ -1,6 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 import requests
+from django.core.mail import send_mail
 from . import scrapping3, scrapping4
+from django.core.mail import EmailMessage
+from django.conf import settings
 
 
 def home(request):
@@ -68,4 +72,13 @@ def train_between_station(request):
             }
         return render(request, 'home.html', context)
     return render(request, 'home.html')
+
+def get_in_touch(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        date = request.POST.get('date')
+
+        send_mail("get-in-touch","django test",settings.EMAIL_HOST_USER,[settings.EMAIL_HOST_USER],fail_silently=False)
+        return HttpResponse("<h1>Abhishek will get back to you soon.</h1>")
 
